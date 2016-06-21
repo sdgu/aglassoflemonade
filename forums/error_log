@@ -1,0 +1,2 @@
+[04-Jan-2016 22:30:57 America/New_York] PHP Warning:  require(/home/aglafnzw/public_html/forums/include/utf8/utf8.php): failed to open stream: No such file or directory in /home/aglafnzw/public_html/forums/install.php on line 32
+[04-Jan-2016 22:30:57 America/New_York] PHP Fatal error:  require(): Failed opening required '/home/aglafnzw/public_html/forums/include/utf8/utf8.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/aglafnzw/public_html/forums/install.php on line 32

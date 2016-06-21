@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/images/manaphyIcon.ico">
+
+
+</head>
+
+<body>
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+	
+</div>
+
+
+<div id="container">
+<div id="site" class="section">
+
+
+
+
+
+
+<h2><img src="/images/shaymin.gif" />PKMN<img src="/images/shaymin.gif" /></h2>  
+ <br />
+
+<p><a href="http://www.smogon.com/forums" target="_blank">Smogon</a> and <a href="http://play.pokemonshowdown.com" target="_blank">Showdown</a></p>
+
+</div>
+
+
+
+<!--
+<div id="ext-icons" class="section" style="border-color: rgb(210, 205, 214);">
+
+    <ul id="outgoing-icons">
+        <li style="margin-right: 432px;">
+            <a href="http://twitter.com/SmogonLemonade" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
+                <img alt="Twitter (link)" src="/images/twitter.png"></img>
+            </a>
+        </li>
+        <li style="margin-right: 0px;">
+           <a href="http://youtube.com/Searqq" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
+                <img alt="Youtube (link)" src="/images/youtube.png"></img>
+           </a>
+        </li>
+    </ul>
+</div>
+-->
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Glass of Lemonade</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sidebarStyle.css">
+<link rel="shortcut icon" href="images/lemonade.ico">
+
+
+</head>
+
+<body>
+
+
+<div class="navigation">
+
+<!--#include virtual="/sidebar.html" -->
+	
+</div>
+
+
+
+
+<div id="frontpage">
+<div id="site" class="section">
+
+
+
+
+
+
+<h2><img src="images/moogle.gif" height="36" width="36" />A Glass of Lemonade <img src="images/moogle.gif" height="36" width="36" /></h2>  
+ <br />
+<p>Helo friends!</p>
+<p>Casual site here.</p>
+
+
+
+</div>
+
+
+</div>
+
+<!-- <div class="drawnpics">
+<img src="images/drawnsakura.png" height="450" width="450"/><br />
+<p align="right">pro quick draw   </p>
+</div>
+
+ -->
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

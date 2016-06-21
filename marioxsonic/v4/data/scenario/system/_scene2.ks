@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/room.jpg"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_transparent.png"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_blushing.png"  ]
+[preload  storage="./data/fgimage/chara/2/hedgehog_transparent.png"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_sigh.png"  ]
+[preload  storage="./data/fgimage/chara/2/hedgehog_sad.png"  ]
+[return]

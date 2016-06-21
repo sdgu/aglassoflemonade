@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+<link rel="shortcut icon" href="images/lemonade.ico">
+
+
+</head>
+
+<body>
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+</div>
+
+
+<div id="frontpage">
+<div id="site" class="section">
+
+
+
+
+
+
+<h2><img src="images/moogle.gif" height="36" width="36" />Aboat <img src="images/moogle.gif" height="36" width="36" /></h2>  
+ <br />
+<p>so long gay bowser</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+</html>

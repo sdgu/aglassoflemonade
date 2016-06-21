@@ -1,0 +1,55 @@
+#cubing
+{
+    margin: 5% auto;
+        margin-top: 1%;
+        margin-right-value: auto;
+        margin-bottom: 5%;
+        margin-left-value: auto;
+        margin-left-ltr-source: physical;
+        margin-left-rtl-source: physical;
+        margin-right-ltr-source: physical;
+        margin-right-rtl-source: physical;
+    width: 1024px;
+
+}
+
+a.cubing 
+{
+    border-bottom: 1px dotted #3d3529;
+    color: #3d3529;
+    text-decoration: none;
+}
+
+#pagelinks 
+{
+    
+    /*clear: both;*/
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+#interlinks 
+{
+    margin: 0px auto;
+    padding: 0px;
+    width: 500px;
+}
+
+#interlinks li {
+    display: block;
+    font-size: 0.80em;
+    line-height: 1.25em;
+    float: left;
+    color: black;
+}
+
+#interlinks li a {
+    display: inline-block;
+}
+
+#interlinks li a:hover
+{
+    border-bottom: 1px solid #ABABAB;
+    display: inline-block;
+}

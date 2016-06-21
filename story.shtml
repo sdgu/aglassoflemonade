@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Glass of Lemonade</title>
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+</head>
+
+<body>
+
+
+<div class="navigation">
+
+<!--#include virtual="/sidebar.html" -->
+	
+</div>
+
+
+<div id="frontpage">
+<div id="site" class="section">
+<a href="#1">-1-</a>
+<a href="#2">-2-</a>
+<div id="1">
+<h3>1</h3>
+<p>
+"Where to begin?" the Deltoraman mused, <br />
+Replying to kiddos galore <br />
+"It was long ago so you may be confused."<br />
+For many aren't around anymore.<br /><br />
+
+The legend starts on a lazy afternoon<br />
+A hero with greatness in store.<br />
+He would have a run in with fortune soon<br />
+But trouble was straight in view<br /><br />
+
+See, travel by boat was transportation's tune<br />
+And usually safety was coo.<br />
+For those travelers who were lacking gold,<br />
+However, the presence of pirates was due<br /><br />
+
+As they appeared some first-timers stood cold.<br />
+Spells were fired toward the hero<br />
+But he readied himself, his excitement unable to hold.<br />
+</p>
+</div>
+ <br />
+<div id="2">
+<h3>2</h3>
+<p>
+
+
+They came quite swiftly, they flew through the waves <br />
+Heralding the Flag of the Cards <br />
+He steadied himself, the day ready to save <br />
+Wielding only Fortune's shard <br /> <br />
+
+(For the record he didn't know what it was) <br />
+The travelers he would guard <br />
+But in his plan there were a few major flaws <br />
+Cards, not the usual type <br /> <br />
+
+A vile group that doesn't follow pirate law <br />
+Rule 1: Suffering none to slight <br />
+Rule 2: Fight the defenders before taking goods <br />
+Rule 3: Flag notches display might <br /> <br />
+
+Alas the Cards, trade them as slaves they would <br />
+Of course going for the others, <br />
+Overpower the hero they could. <br />
+
+
+</p>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+<!--
+<div id="ext-icons" class="section" style="border-color: rgb(210, 205, 214);">
+
+    <ul id="outgoing-icons">
+        <li style="margin-right: 432px;">
+            <a href="http://twitter.com/SmogonLemonade" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
+                <img alt="Twitter (link)" src="/images/twitter.png"></img>
+            </a>
+        </li>
+        <li style="margin-right: 0px;">
+           <a href="http://youtube.com/Searqq" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
+                <img alt="Youtube (link)" src="/images/youtube.png"></img>
+           </a>
+        </li>
+    </ul>
+</div>
+-->
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/back-of-school-day.jpg"  ]
+[preload  storage="./data/fgimage/chara/2/hedgehog_180.png"  ]
+[preload  storage="./data/fgimage/chara/3/handeggman_transparent.png"  ]
+[preload  storage="./data/fgimage/chara/2/hedgehog_sapphire_upsidedown.png"  ]
+[preload  storage="./data/fgimage/chara/3/eggman_test.gif"  ]
+[preload  storage="./data/fgimage/default/blackout.png"  ]
+[return]

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Cubing</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+<link rel="stylesheet" href="/css/cubingStyle.css">
+<link rel="shortcut icon" href="/images/cube.ico">
+
+
+
+
+</head>
+
+<body>
+
+
+<div class = "navigation">
+
+    <!--#include virtual="/sidebar.html" -->
+    
+</div>
+
+
+<div id="cubing">
+
+
+
+
+<div id="site" class="section">
+
+
+
+<div id="pagelinks" class="section">
+
+
+<!--#include virtual="/cubing/cubingnav.html" -->
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="container">
+
+<div id="site" class="section">
+<p>Hopefully there will be guides here, with some extra emphasis on what to look for when memorizing algorithms.</p>
+<p>Also I rule! !</p>
+</div>
+</div>
+
+
+</body>
+</html>

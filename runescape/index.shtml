@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>2007 Runescape</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div id="cubing">
+<div id="site" class="section">
+
+<div id="pagelinks" class="section">
+
+
+    <ul id="interlinks">
+
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="Main" href="/cubing" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" 	class="cubing">Main</a>
+        </li>     
+
+ 
+
+
+
+
+    </ul>
+
+</div>
+</div>
+</div>
+
+
+
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+	
+</div>
+
+<div id="container">
+
+<div id="site" class="section">
+<p>placeholder</p>
+<p>Also I rule! !</p>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="shortcut icon" href="../images/lemonade.ico">
+<style>
+#frontpage
+{
+	margin-top: 50px;
+}
+p
+{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+</style>
+<title>hax pasta gen</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+
+	<script src="http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.js"></script>
+
+	<script>
+
+$(document).ready(function()
+{
+var clientTarget = new ZeroClipboard( $("#target-to-copy"), {
+    moviePath: "http://www.paulund.co.uk/playground/demo/zeroclipboard-demo/zeroclipboard/ZeroClipboard.swf",
+    debug: false
+} );
+
+clientTarget.on( "load", function(clientTarget)
+{
+    $('#flash-loaded').fadeIn();
+
+    clientTarget.on( "complete", function(clientTarget, args) {
+        clientTarget.setText( args.text );
+        $('#target-to-copy-text').fadeIn();
+    } );
+} );
+});
+	</script>
+
+
+
+
+
+
+
+
+	<script>
+
+	var percentage = $('textarea#percent').val();
+	$(function()
+		{
+			$('#percent').keyup(function()
+			{
+				$('#pasta').text("This is " + $(this).val() + "% luck " + $(this).val() + "% skill "
+					+ $(this).val() + "% concentrated power of will " + $(this).val() + "% pleasure " + 
+					$(this).val() + "% pain " + $(this).val() + "% reason to quit the game.");
+			});
+		});
+
+
+
+	</script>
+
+</head>
+
+<body>
+<div id="frontpage">
+<div id="site" class="section">
+<!-- <p id="flash-loaded" style="display:none">Flash player is loaded.</p> -->
+<p>enter the %age without the %-sign</p>
+	<textarea id="percent" autocomplete="off"></textarea>
+	<p name="pasta" id="pasta">o.o</p>
+	<p id="target-to-copy-text" style="display:none;">Text Copied.</p>
+<button id="target-to-copy" data-clipboard-target="pasta">Click To Copy</button>
+</div>
+</div>
+</body>
+</html>

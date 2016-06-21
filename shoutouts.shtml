@@ -1,0 +1,25 @@
+<html>
+<header>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+<title>Shoutouts</title>
+
+
+</header>
+
+<body>
+<div class = "navigation">
+<!--#include virtual="/sidebar.html" -->
+	
+</div>
+<div id="container">
+<div id = "site" class="section">
+
+<p>Cubing images taken from the speedsolving wiki.</p>
+
+
+</div>
+</body>
+
+
+</html>

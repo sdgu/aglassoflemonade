@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        var started = false;
+        var spaceCount = 0;
+        var prevTime;
+        var timingCount = 0;
+    </script>
+
+ 
+    <title>Lemonade Timer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/TimerStyle.css">
+
+</head>
+
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="/js/TimerJS.js"></script>
+
+    <script src="/path/to/jquery.cookie.js"></script>
+    <script src="/js/timingCommands.js"></script>
+    
+
+<div class = "navigation">
+
+<!--#include virtual="/sidebar.html" -->
+	
+</div>
+
+
+
+
+<div class="wrapper">
+        <p><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span></p>
+        <p id="test"></p>
+        <p id="average">hi2</p>
+</div>
+ 
+    <p>hmm it broke somehow</p>
+    <p>Space to start and stop the timer. <br />
+       e to clear time (clears cookies) <br />
+       Working on: clearing single times, doing average of 5, 12, etc. times.</p>
+
+
+
+
+
+    <div style="position: absolute; bottom: 0px; font-size: 10px; color: #00CCFF">
+        adapted from <a href="http://codepen.io/cathydutton/pen/GBcvo">here</a>
+    </div>
+
+
+</body>
+
+</html>

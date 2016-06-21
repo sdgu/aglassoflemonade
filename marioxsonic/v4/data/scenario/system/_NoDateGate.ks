@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/schoolgate.jpg"  ]
+[preload  storage="./data/fgimage/chara/2/hedgehog_sapphire.png"  ]
+[preload  storage="./data/fgimage/chara/3/handeggman_transparent.png"  ]
+[preload  storage="./data/fgimage/chara/3/eggman_test.gif"  ]
+[preload  storage="./data/fgimage/default/blackout.png"  ]
+[return]

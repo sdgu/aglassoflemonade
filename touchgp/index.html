@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html ng-app="gptexteditor">
+  <head>
+    <title>GP Text Editor</title>
+  </head>
+  <body>
+
+<script>
+    window.onbeforeunload = function (e) {
+        e = e || window.event;
+
+        // For IE and Firefox prior to version 4
+        if (e) {
+            e.returnValue = 'Sure?';
+        }
+
+        // For Safari
+        return 'Sure?';
+    };
+</script>
+<a onclick="location.reload(true)"><div class="button">Click me every couple of visits.</div></a>
+    <div ng-controller="MainCtrl as m">
+
+
+    <h1 ng-touch="touchme()">Tounch Me</h1>
+
+    <p>Left click a word to make it red. Hold down shift and click two words to make everything inbetween red. Control click to undo styling on a word / remove an addition. Alt click to bring up an input box where you can add words, and press enter to display them in the editor. <strong>Make sure to press enter before trying to make other additions.</strong></p>
+
+    <p><strong>If you're using Chrome, you have to click with Control and Alt together to bring up the input box.</strong></p>
+
+    <p>For comments, also use alt-click. Wrap them in [c][/c]. Note: they will appear blue in the editor but you can change their color later. No need to preface them by "Comment:"; that is done for you. The <a class="button">[c]</a> button creates the comment tags; however, you can't highlight text and press the button to wrap the text in [c][/c].</p>
+
+    <p>The <a class="button">&eacute;</a> button automatically inserts "Pok&amp;eacute;mon".</p>
+    
+    <p>Similarly, <a class="button">&mdash;</a> types "&amp;mdash;".</p>
+
+    <p>
+        You do have to delete the whole word if you want to add / remove punctuation currently. 
+    </p>
+    <p>
+        Do not include HTML in the text you want to edit. BB Code is fine though.
+    </p>
+
+
+    <br />
+    <p>If you want to comment on an amcheck, put the colors they used (in the BB Code) here and paste the BB Code.</p>
+    Amcheck Add: <input ng-model="amAdd"></input> Amcheck Remove: <input ng-model="amRem"></input> Amcheck Comment: <input ng-model="amCom"></input>
+
+    <br /> <br />
+    <textarea cols="50" rows="20" ng-model="thingToGP"></textarea> <br />
+    <a ng-click="go()" href="#editor"><div class="buttonlike">Prep</div></a> <br />
+
+
+<!--     <span ng-style="testStyle" ng-dblclick="test3()" ng-right-click="test2($event)" sglclick="test()">Test</span> -->
+    <br />
+
+
+
+    <h3 id="editor">Quick Guide</h3>
+    <ul>
+        <li>Regular Left Click: Remove</li>
+        <li>ALT Click: add <strong>ALT</strong>ernatives. (Control + Alt for Chrome)</li>
+        <li>Control Click: <strong>"Control"</strong> over edits.</li>
+        <li>[c][/c] for comments</li>
+
+    </ul>
+
+    <a ng-click="resetShift()"><div class="buttonlike">Reset Shift</div></a> (lazy solution if you accidentally lift shift before clicking the ending word)
+
+
+
+    <h1>WYSIWYG Editor</h1>
+    <input type="checkbox" ng-model="checked.smog"> Smog? (automatically changes Pokemon to Pok&eacute;mon) <br />
+    <input type="checkbox" ng-model="checked.val"> Pokegrammar? (corrects U-Turn into U-turn, V-Create into V-create, Ho-oh into Ho-Oh, ThunderPunch to Thunder Punch) <hr /> <br />
+
+    <div sticky><a ng-click="toggle()"><div class="buttonlike"><span ng-bind="hideOrShow"></span> Red Removals</div></a></div>
+
+    <div class="noselect">
+    <span ng-repeat="word in m.dispArr | limitTo:limit track by $index" ng-hide="literalText">
+
+      <span ng-bind-html="word" ng-style="style{{$index}}" ng-mousedown="edit($event, $index)" ng-mouseup="focusInput($event, $index)" ng-hide="literalText{{$index}}"></span>
+
+
+      <a ng-show="addingWord{{$index}}" ng-click="addComTag($index)"><div class="button">[c]</div></a>
+      <a ng-show="addingWord{{$index}}" ng-click="addmdash($index)"><div class="button">&mdash;</div></a>
+      <a ng-show="addingWord{{$index}}" ng-click="addAccE($index)"><div class="button">&eacute;</div></a>
+
+      <input size="40" id="wordToAdd{{$index}}" ng-show="addingWord{{$index}}" ng-keyup="addWord($event, $index)" />
+
+    </span>
+
+    <span ng-repeat="word in m.dispArrLit | limitTo:limit track by $index" ng-show="literalText">
+
+        <span ng-bind-html="word"></span>
+
+    </span>
+
+
+    <br /> <br /> <hr />
+    <a ng-click="increaseLimit()"><div class="buttonlike">Show More</div></a>
+    </div>
+    <br />
+    <h1>BB Code</h1>
+
+
+    <p>Click the input boxes to bring up a color picker, or type in supported colors.</p>
+    <div ng-style="{'background-color' : 'white'}">
+        test space :) <br /> <br />
+    <span ng-style="{'color' : addColor, 'font-weight' : 'bold'}">add</span> <span ng-style="{'color' : remColor, 'font-weight' : 'bold', 'text-decoration' : 'line-through'}">remove</span> 
+    <span ng-style="{'color' : comColor, 'font-weight' : 'bold'}">comment</span><br />
+    <br />
+    test space end :)
+</div>
+<br />
+    Add Color: <input colorpicker ng-model="addColor"></input>
+    Remove Color: <input colorpicker ng-model="remColor"></input> 
+    Comment Color: <input colorpicker ng-model="comColor"></input><br />
+
+    <p>Whenever you make changes above, click Show to update everything and convert it to BB Code. Then click Copy to clipboard for easy c/p.</p>
+
+    
+    <a ng-click="copyToBoard()"><div class="buttonlike">Show</div></a> <br />
+    <a ngclipboard data-clipboard-target="#cptarget"><div class="buttonlike">Copy to clipboard</div></a> <br />
+    <textarea ng-bind="cpthis" id="cptarget" cols="50" rows="20"></textarea>
+<!--     <span ng-show="readyToCP" ng-repeat="word in m.cpArr track by $index">
+
+      <span ng-bind-html="word"></span>
+
+    </span> -->
+
+
+  </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr />
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="gpstyle.css"/>
+    <link rel="stylesheet" href="colorpicker.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-touch.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.3/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+    <script src="ngclipboard.min.js"></script>
+    <script src="bootstrap-colorpicker-module.min.js"></script>
+    <script src="sticky.js"></script>
+    <script src="gp.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/corridor-day.jpg"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_transparent.png"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_blushing.png"  ]
+[preload  storage="./data/fgimage/chara/1/peachy_crying.png"  ]
+[return]

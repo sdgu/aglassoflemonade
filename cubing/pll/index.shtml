@@ -1,0 +1,262 @@
+<html>
+<head>
+<title>PLL</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/cubingStyle.css">
+<link rel="shortcut icon" href="/images/cube.ico">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+
+<!-- <style>
+.navigation
+{
+	/* margin-right: 120px; */
+}
+
+</style> -->
+
+</head>
+
+<body>
+
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+</div>
+
+
+<div id="cubing">
+<div id="site" class="section">
+
+<div id="pagelinks" class="section">
+
+
+<!--#include virtual="/cubing/cubingnav.html" -->
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<div id="container">
+<div id="site" class="section">
+
+
+<h2>Guide to PLL and stuff</h2>
+<p>The PLL names follow "official" names, ie what they are on the Speedsolving wiki. Some images here are rotated so that you don't need to begin the algorithms with a cube rotation in y. Click on the algorithm for a video of how I recognize and remember it.</p> <br />
+
+<table border="1">
+<caption align="bottom">hi. Roux last step intuitive. M slice or 2-gen.</caption>
+<col width="275px" />
+<col width="275px" />
+<tr><th colspan="2">Edge-only Permutations</tr>
+
+<tr>
+<th>Ua Permutation</th>
+<th>Ub Permutation</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Uaperm.gif" /><br />o.o</td>
+<td><img src="/images/pll/Ubperm.gif" /><br />abc</td>
+</tr>
+<tr>
+<th>H Permutation</th>
+<th>Z Permutation</th>
+</tr>
+<tr>
+<td><img src="/images/pll/Hperm.gif" /><br />hi</td>
+<td><img src="/images/pll/Zperm.gif" /><br />R' U' R2 U R U R' U' R U R U' R U' R' U2</td>
+</tr>
+
+</table>
+<br /><br />
+
+<table border="1">
+<caption align="bottom">These + edges can solve PLL, just takes more steps.</caption>
+<col width="275px" />
+<col width="275px" />
+<tr><th colspan="2">Corner-only Permutations</tr>
+
+<tr>
+<th>Aa Permutation</th>
+<th>Ab Permutation</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Aaperm.gif" /><br />blah</td>
+<td><img src="/images/pll/Abperm.gif" /><br />(y2) mirror of other</td>
+</tr>
+<tr>
+<th>E Permutation</th>
+</tr>
+<tr>
+<td><img src="/images/pll/Eperm.gif" /><br />R2 U R' U' (y) (R U R' U')2 R U R' (y') R U' R2'</td>
+
+</tr>
+
+</table>
+<br /><br />
+
+<h3>How to use Ua, Ub, and Aa to solve the entire PLL (in multiple steps).</h3>
+<p>First, look for a side that has two corners of the same color. If you can't find one, do Aa once and one will appear. Point that side away and do Aa. Now do one of Ua or Ub. If the case is H or Z, Ua followed by Ua or Ub will solve the case. Note that Ua twice is the same as Ub, so that allows you to know even fewer algorithms if you wish.</p>
+
+<br /><br />
+
+<table border="1">
+<caption align="bottom">These two algorithms come from the same two OLLs (1: R U R' U' R' F R F' and 2: F R U' R' U' R U R' F') performed in different orders. The T permutation goes 1 -> 2, so there is some cancellation. Y goes 2 -> 1. For 1, watch the bottom right pair. The first part of the algorithm removes the pair with R U R' and then inserts it in a different way (hammer). For 2, Watch the bottom left pair. It gets inserted into the bottom right pair and then replaced. Recognition: T has parallel 2-blocks. Y has perpendicular 2-blocks that meet at a misplaced corner.</caption>
+
+<col width="275px" />
+<col width="275px" />
+
+
+<tr>
+<th>T Permutation</th>
+<th>Y Permutation</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Tperm.gif" /> <br /> link to vid placeholder. </td>
+
+
+<td><img src="/images/pll/Yperm.gif" /> <br /> link to vid placeholder. </td>
+
+</tr>
+</table>
+
+<br /><br />
+
+<table border="1">
+<caption align="bottom">T, Y, Ja, and Jb make up the Old Pochmann BLD method (minus parity). Ja and Jb can be done as mirrors of each other, but if you prefer right-handed algorithms (or left-hand one handed), I have provided an alternate Ja. It is helpful to know both, since if you can execute them at similar speeds you can save some time adjusting the top layer. Jb is similar to a T perm. After the F', still follow the bottom right pair to see how it moves to remember the alg. Recognition: look for a side that has all three pieces the same color, with blocks of two elsewhere. This distinguishes the J's from F, which has a side where all three pieces have the same color, but no blocks of size 2.</caption>
+<col width="275px" />
+<col width="275px" />
+
+
+<tr>
+<th>Ja</th>
+<th>Jb</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Japerm.gif" /> <br /> link to vid placeholder. <br /> (y2) link to vid placeholder. </td>
+
+
+<td><img src="/images/pll/Jbperm.gif" /> <br /> link to vid placeholder. </td>
+
+</tr>
+
+</table>
+<br /><br />
+
+<table border="1">
+<caption align="bottom">The G permutations look hard, but they can be broken down to be easily recognized. It is very helpful to do mirrors and reverses for these.</caption>
+<col width="280px" />
+<col width="280px" />
+
+<!-- may need different order and rotation -->
+<tr>
+<th>Gd</th>
+<th>Gb</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Gdperm.gif" /> <br /><br /> <a href="https://youtu.be/tQUSD4jAx9A" target="_blank">R U R' (y') R2 u' R U' R' U R' u R2</a> <br /> Note: On the speedsolving wiki, there is a (y2) in front of the algorithm. Here, I rotated the image to account for that, so there is not cube rotation necessary. </td>
+
+
+
+<td><img src="/images/pll/Gbperm.gif" /> <br /><br /><a href="https://www.youtube.com/watch?v=HS4wl9yx4mc" target="_blank">L' U' L (y') R2' u R' U R U' R u' R2</a> <br /><a href="" target="_blank">(y2) R' U' R (y) R2 u R' U R U' R u' R2</a> <br /> The second algorithm is the first but done from the back.</td>
+
+</tr>
+
+<tr>
+<th>Gc</th>
+<th>Ga</th>
+</tr>
+<tr>
+<td><img src="/images/pll/Gcperm.gif" /> <br /><br /> <a href="https://www.youtube.com/watch?v=X-mab7DEOhs" target="_blank">R2' u' R U' R U R' u R2 f R' f'</a></td>
+<td><img src="/images/pll/Gaperm.gif" /> <br /><br /> <a href="https://www.youtube.com/watch?v=muuGxU4kvI4" target="_blank">L2 u L' U L' U' L u' L2 f' L f</a></td>
+
+
+
+</tr>
+
+
+</table>
+
+<br /><br />
+
+<table border="1">
+<caption align="bottom">R algs</caption>
+<col width="275px" />
+<col width="275px" />
+
+
+<tr>
+<th>Ra</th>
+<th>Rb</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/R1perm.gif" /> <br />F2 R' F' U' F' U F R F' U2 F U2 F' <br /> R U' R F2 U R U R U' R' U' F2 R2 U</td>
+
+
+<td><img src="/images/pll/Rbperm.gif" /> <br />R' U2 R U2 R' F (R U R' U') R' F' R2' U'</td>
+
+</tr>
+
+</table>
+
+<br /><br />
+
+<table border="1">
+<caption align="bottom">N algs</caption>
+<col width="275px" />
+<col width="275px" />
+
+
+<tr>
+<th>Na</th>
+<th>Nb</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Naperm.gif" /> <br /> (y) (L' U' R U2 L U R')x2 U </td>
+
+
+<td><img src="/images/pll/Nbperm.gif" /> <br /> (y) (R' U L' U2 R U' L)x2 U' </td>
+
+</tr>
+
+</table>
+
+<br /><br />
+
+<table border="1">
+<caption align="bottom">V and F unufun algs</caption>
+<col width="275px" />
+<col width="275px" />
+
+
+<tr>
+<th>V</th>
+<th>F</th>
+</tr>
+
+<tr>
+<td><img src="/images/pll/Vperm.gif" /> <br />R U2 R' D R U' R U' R U R2 D R' U' R D2</td>
+
+
+<td><img src="/images/pll/Fperm.gif" /><br />R' U R U' R2 F' U' F U R F R' F' R2 U'</td>
+
+</tr>
+
+</table>
+
+<!-- V, F, 4 G perms -->
+
+</div>
+</div>
+</body>
+</html>

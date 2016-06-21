@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>OLL</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/cubingStyle.css">
+<link rel="shortcut icon" href="/images/cube.ico">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+
+
+</head>
+
+<body>
+
+
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+</div>
+
+<div id="cubing">
+<div id="site" class="section">
+
+<div id="pagelinks" class="section">
+
+<!--#include virtual="/cubing/cubingnav.html" -->
+
+
+</div>
+</div>
+</div>
+
+
+<div id="container">
+<div id="site" class="section">
+
+
+<h2>Guide to OLL and stuff</h2>
+<h3>The 2LOLL Subset</h3>
+<p>Here I'll quickly describe 2-look OLL.</p> <br />
+
+<table border="1">
+<caption>2-look OLL involves orienting the top layer edges (making a cross on the top), which reduces the number of cases to 3 + 7 = 10. The following three algorithms will give the cross as long as there are no edges, two edges in 9 and 12 o' clock, and two edges in 3 and 9 o' clock, respectively.</caption>
+<col width="210px"></col>
+<col width="210px"></col>
+<col width="210px"></col>
+
+<tr>
+<th>No Edges</th>
+<th>Perpendicular Edges</th>
+<th>Line Edges</th>
+</tr>
+<tr>
+<td><img src="/images/oll/O20.gif" /> <br /><br /> <a href="" target="_blank">M U R U R' U' M2 U R U' r'</a> <br /> This is a rare OLL case (1/216 chance), so I use it in 2LOLL because there aren't many opportunities to practice it in a solve otherwise.</td>
+
+<td><img src="/images/oll/widesune.gif" /> <br /><br /> <a href="" target="_blank">r U R' U R U2 r'</a> <br />I chose this algorithm because it is essentially the same as sune, which means less memorization is necessary. This algorithm is one turn longer than the standard, but I feel it's worth it.</td>
+
+<td><img src="/images/oll/2LT.gif" /> <br /><br /> <a href="" target="_blank">F R U R' U' F'</a><br />Easy to recognize: look for the T and corners pointing to the left.</td>
+</tr>
+
+</table>
+
+<table border="1">
+<caption>lalala</caption>
+<col width="210px"></col>
+<col width="210px"></col>
+<col width="210px"></col>
+
+<tr>
+<th>Sune</th>
+<th>Antisune</th>
+<th>Doublesune</th>
+</tr>
+<tr>
+<td><img src="/images/oll/sune.gif" /> <br /><br /> <a href="" target="_blank">R U R' U R U2 R'</a> <br /> Easiest OLL case IMO.</td>
+
+<td><img src="/images/oll/antisune.gif" /> <br /><br /> <a href="" target="_blank">L' U' L U' L' U2 L</a> <br /> Mirror of sune. (y2) and doing this algorithm from the back with the right side is also fairly easy.</td>
+
+<td><img src="/images/oll/doublesune.gif" /> <br /><br /> <a href="" target="_blank">R U R' U R U' R' U R U2 R'</a><br />Sune twice, so there is some cancellation. Note the non-oriented corners point away to the left and right.</td>
+</tr>
+
+<tr>
+<th>Bowtie</th>
+<th>Headlights</th>
+<th>Chameleon</th>
+</tr>
+<tr>
+<td><img src="/images/oll/bowtie.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+
+<td><img src="/images/oll/headlights.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+
+<td><img src="/images/oll/chameleon.gif" /> <br /><br /> <a href="" target="_blank"></a><br /></td>
+</tr>
+
+<tr><th></th><th>OLL 22</th><th></th></tr>
+<tr><td></td><td><img src="/images/oll/O22.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /></td><td></td></tr>
+
+</table>
+<h2>Replacing First Look Algorithms to Learn Full OLL</h2>
+<p>One of the stuggles of OLL, I've found, is that I might learn a case, but rarely actually encounter it in a solve. As a result, it's easily forgotten. Instead, after I've solidly remembered the first look algorithms, I pick new ones. Initially, I pause and make sure to identify what pieces would need to be reoriented for it to be the actual OLL case. Obviously, this is no good for speedsolving, but now the algorithms are practiced and can be used in the actual case.</p> <br />
+
+
+<h3>"Free" Cases</h3>
+<p>In my opinion, the following cases are both easy to recognize and have easy algorithms. This may be because they are mirrors or have common triggers in the execution. Therefore, I think they are the most convenient to learn after 2LOLL</p>
+<table border="1">
+<caption align="bottom">It is very useful to learn these two algorithms, because in doing so you will also learn two PLLs (T and Y are made up of one followed by the other).</caption>
+<col width="315px"></col>
+<col width="315px"></col>
+
+<tr>
+<th>OLL 33</th>
+<th>OLL 37</th>
+
+</tr>
+
+<tr>
+<td><img src="/images/oll/O33.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/O37.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+</tr>
+</table>
+
+
+<table border="1">
+<caption align="bottom">These have a distinct shape and very finger-trick friendly execution.</caption>
+<col width="315px"></col>
+<col width="315px"></col>
+
+<tr>
+<th>OLL 38</th>
+<th>OLL 36</th>
+</tr>
+
+<tr>
+<td><img src="/images/oll/O38.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/O36.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+</tr>
+
+</table>
+
+<table border="1">
+<caption align="bottom">The first two are like the T-shape used in the standard first look, but with f instead of F. They are easy to recognize because the non-oriented pieces form a line. There are two cases with the same oriented shape. The last algorithm is basically the wide T twice. Notice how two mis-oriented pieces point up and down, and the last pair point to the left.</caption>
+<col width="210px"></col>
+<col width="210px"></col>
+<col width="210px"></col>
+
+<tr>
+<th>OLL 44 "Wide T"</th>
+<th>OLL 43 "Wide T mirror"</th>
+<th>OLL 51 "Double Wide T"</th>
+</tr>
+
+<tr>
+<td><img src="/images/oll/wideT.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/wideTmirror.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/doublewideT.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+</tr>
+
+</table>
+
+<table border="1">
+
+<caption align="bottom">These two cases are easy to recognize because all the corners are oriented.</caption>
+<col width="315px"></col>
+<col width="315px"></col>
+
+<tr>
+
+<th>OLL 28</th>
+<th>OLL 57</th>
+</tr>
+
+<tr>
+
+<td><img src="/images/oll/O28.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/O57.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+</tr>
+
+</table>
+
+<table border="1">
+<caption align="bottom">The first case here is the mirror of what I use for the first look. The other two are similar, but instead two mis-oriented pieces point to the left or right. The execution is two of the standard T, which an adjustment in the middle.</caption>
+<col width="210px"></col>
+<col width="210px"></col>
+<col width="210px"></col>
+
+
+<tr>
+<th>OLL 8</th>
+<th>OLL 12</th>
+<th>OLL 11</th>
+</tr>
+
+<tr>
+<td><img src="/images/oll/O8.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/O12.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+<td><img src="/images/oll/O11.gif" /> <br /><br /> <a href="" target="_blank"></a> <br /> </td>
+</tr>
+
+</table>
+
+</div>
+</div>
+</body>
+</html>
