@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>A Glass of Lemonade</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/sidebarStyle.css">
-<link rel="shortcut icon" href="images/lemonade.ico">
+	<title>A Glass of Lemonade</title>
+	<link rel="stylesheet" href="css/generalstyle.css">
+	<link rel="stylesheet" href="css/home/style.css">
+	<link rel="stylesheet" href="css/sidebarStyle.css">
+	<link rel="shortcut icon" href="images/lemonade.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
 
 </head>
@@ -12,41 +14,46 @@
 <body>
 
 
-<div class="navigation">
-
-<!--#include virtual="/sidebar.html" -->
-	
-</div>
 
 
 
+	<div class="pagewrapper">
 
-<div id="frontpage">
-<div id="site" class="section">
+		<div class="pagecontent">
 
+			<div class="navigation">
 
+				<!--#include virtual="/sidebar.html" -->
 
-
-
-
-<h2><img src="images/moogle.gif" height="36" width="36" />A Glass of Lemonade <img src="images/moogle.gif" height="36" width="36" /></h2>  
- <br />
-<p>Helo friends!</p>
-<p>Casual site here.</p>
+			</div>
 
 
+			<div class="content">
+				<h2>
+				<!-- <img src="images/moogle.gif" height="36" width="36" /> -->
+				A Glass of Lemonade 
+				<!-- <img src="images/moogle.gif" height="36" width="36" /> -->
+				</h2>  
+				
+				<p>Helo friends!</p>
+				<p>Casual site here.</p>
 
-</div>
+				<div class="drawnpic">
+					<img src="images/drawnsakura.png" height="450" width="450"/><br />
+					<p align="right">pro quick draw   </p>
+				</div>
 
 
-</div>
+			</div>
 
-<!-- <div class="drawnpics">
-<img src="images/drawnsakura.png" height="450" width="450"/><br />
-<p align="right">pro quick draw   </p>
-</div>
+		</div>
 
- -->
+	</div>
+
+
+
+
+
 
 
 

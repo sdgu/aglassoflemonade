@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/sidebarStyle.css">
-<link rel="shortcut icon" href="images/lemonade.ico">
+	<title>About</title>
+	<link rel="stylesheet" href="css/generalstyle.css">
+	<link rel="stylesheet" href="css/home/style.css">
+	<link rel="stylesheet" href="css/sidebarStyle.css">
+	<link rel="shortcut icon" href="images/lemonade.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
 
 </head>
 
 <body>
-<div class = "navigation">
 
-	<!--#include virtual="/sidebar.html" -->
-</div>
+	<div class="pagewrapper">
 
+		<div class="pagecontent">
+			<div class = "navigation">
 
-<div id="frontpage">
-<div id="site" class="section">
+				<!--#include virtual="/sidebar.html" -->
+			</div>
 
+			<div class="content">
 
+				<h2>
+				<!-- <img src="images/moogle.gif" height="36" width="36" /> -->
+				Aboat 
+				<!-- <img src="images/moogle.gif" height="36" width="36" /> -->
+				</h2>  
+			
+				<p>so long gay bowser</p>
+				<p>Here are some random projects: 
+				<ul>
+					
+					<li><a href="http://www.ineffa.blue">Ineffablue</a></li>
+					<li><a href="http://monotypeps.tk:3000/#/">Collaborative Pokemon Teambuilder</a></li>
+					<li><a href="http://www.twitter.com/LostWoodCPP">Lost Wood</a></li>
+					<li><a href="http://www.github.com/sdgu">My Github</a></li>
+				</ul>
+				</p>
+			</div>
 
+		</div>
 
-
-
-<h2><img src="images/moogle.gif" height="36" width="36" />Aboat <img src="images/moogle.gif" height="36" width="36" /></h2>  
- <br />
-<p>so long gay bowser</p>
-
-</div>
-
-
-
-
-</div>
-
-
+	</div>
 
 </body>
-
-
-
-
-
 
 </html>

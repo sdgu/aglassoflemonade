@@ -1,0 +1,8 @@
+#pagewrapper
+{
+	margin: -20px 75px -10px 75px;
+	padding: 5px 20px 15px 20px;
+	box-shadow: 0px 0px 7px #999;
+	background: #ffffff none repeat scroll 0% 0%;
+	position: relative;
+}

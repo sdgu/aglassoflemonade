@@ -1,24 +1,32 @@
 <html>
 <header>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/sidebarStyle.css">
-<title>Shoutouts</title>
-
+	<title>Shoutouts</title>
+	<link rel="stylesheet" href="css/generalstyle.css">
+	<link rel="stylesheet" href="css/home/style.css">
+	<link rel="stylesheet" href="css/sidebarStyle.css">
+	<link rel="shortcut icon" href="images/lemonade.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
 </header>
 
 <body>
-<div class = "navigation">
-<!--#include virtual="/sidebar.html" -->
-	
-</div>
-<div id="container">
-<div id = "site" class="section">
 
-<p>Cubing images taken from the speedsolving wiki.</p>
+	<div class="pagewrapper">
 
+		<div class="pagecontent">
 
-</div>
+			<div class = "navigation">
+				<!--#include virtual="/sidebar.html" -->
+
+			</div>
+			<div class="content">
+
+				<p>Cubing images taken from the speedsolving wiki.</p>
+
+			</div>
+
+		</div>
+	</div>
 </body>
 
 
